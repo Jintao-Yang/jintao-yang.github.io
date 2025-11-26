@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Jintao Yang | 杨锦涛</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+      margin: 0;
+      padding: 2rem 0 3rem;
+      line-height: 1.6;
+      background: #f5f7fb;
+      color: #222;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 2rem 2.2rem 3rem;
+      border-radius: 14px;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+    }
+    a { text-decoration: none; color: #005bb5; }
+    a:hover { text-decoration: underline; }
+    h1 { margin-bottom: 0.2rem; }
+    h2, h3, h4 { margin-top: 1.8rem; }
+    .subtitle {
+      color: #555;
+      margin-bottom: 0.8rem;
+    }
+    .contact {
+      margin-bottom: 1.2rem;
+      color: #444;
+    }
+    .lang-switch {
+      display: flex;
+      gap: 0.5rem;
+      margin: 0 0 1.5rem;
+      justify-content: flex-end;
+    }
+    .lang-btn {
+      border: 1px solid #d0d7e2;
+      border-radius: 999px;
+      padding: 0.3rem 0.9rem;
+      font-size: 0.9rem;
+      cursor: pointer;
+      background: #f5f7fb;
+    }
+    .lang-btn.active {
+      border-color: #0070f3;
+      color: #0070f3;
+      background: #e8f1ff;
+      font-weight: 600;
+    }
+    .lang-section {
+      display: none;
+    }
+    .lang-section.active {
+      display: block;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    hr {
+      margin: 2rem 0;
+      border: none;
+      border-top: 1px solid #e5e7f0;
+    }
+    .small-note {
+      font-size: 0.9rem;
+      color: #666;
+    }
+    .avatar-wrapper {
+      text-align: center;
+      margin: 0 0 1.5rem;
+    }
+    .avatar-wrapper img {
+      width: 190px;
+      height: 190px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #eef0f7;
+      box-shadow: 0 8px 22px rgba(15, 23, 42, 0.16);
+    }
+    .name-block {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- 语言切换按钮 -->
+    <div class="lang-switch">
+      <button class="lang-btn active" onclick="setLang('en')">English</button>
+      <button class="lang-btn" onclick="setLang('zh')">中文</button>
+    </div>
+
+    <!-- 头像 -->
+    <div class="avatar-wrapper">
+      <!-- 把 profile.jpg 换成你在仓库里上传的照片文件名 -->
+      <img src="photo.jpg" alt="Jintao Yang">
+    </div>
+
+    <!-- English Version -->
+    <div id="lang-en" class="lang-section active">
+
+      <div class="name-block">
+        <h1>Jintao Yang (杨锦涛)</h1>
+        <div class="subtitle"><strong>Associate Professor · College of Economics &amp; Management, China Agricultural University</strong></div>
+      </div>
+
+      <div class="contact">
+        📧 Email: <a href="mailto:yangjt@lreis.ac.cn">yangjt@lreis.ac.cn</a><br/>
+        📖 <a href="https://scholar.google.com/citations?user=O6IYuLgAAAAJ&hl=en" target="_blank">Google Scholar</a>
+      </div>
+
+      <hr/>
+
+      <h2>About Me</h2>
+      <p>
+        I am an Associate Professor at China Agricultural University, working at the intersection of
+        <strong>GIS, environmental science, agricultural economics, and sustainability analytics</strong>.
+        My research centers on two major directions:
+      </p>
+
+      <ul>
+        <li><strong>Spatiotemporal process modeling of agricultural–environmental systems</strong></li>
+        <li><strong>Optimization and governance of sustainable agri-food systems</strong></li>
+      </ul>
+
+      <p>
+        I have served as the <strong>Principal Investigator</strong> for multiple competitive research fundings, including
+        a National Natural Science Foundation of China (NSFC) Young Scientist Project, the Ministry of Education Humanities
+        and Social Sciences Fund, the China Postdoctoral Science Foundation, the National Program for Postdoctoral Innovative
+        Talents, as well as several National Key Laboratory Open Funds and university-level interdisciplinary grants.
+        These fundings collectively support my long-term research agenda on <strong>spatiotemporal process modeling</strong>
+        and the <strong>sustainable transformation of agri-food systems</strong>.
+      </p>
+
+      <hr/>
+
+      <h2>Research Directions</h2>
+
+      <h3>1. Spatiotemporal Process Modeling of Agricultural–Environmental Systems</h3>
+      <p>
+        I develop spatially explicit models to understand how agricultural production, pollutant migration, ecological processes,
+        and human behaviors evolve across space and time. By integrating <strong>GIS, remote sensing, spatial statistics,
+        and system simulation</strong>, my work uncovers heterogeneity, dynamics, and feedbacks within coupled human–environment systems.
+      </p>
+
+      <h3>2. Optimization &amp; Governance of Sustainable Agri-Food Systems</h3>
+      <p>
+        I design <strong>optimization and policy frameworks</strong> to achieve low-carbon development, heavy-metal pollution governance,
+        and biodiversity protection. My research quantifies the environmental footprints embedded in interprovincial food circulation
+        and proposes implementable solutions that support China’s dual-carbon goals, food safety strategies, and ecological
+        compensation mechanisms.
+      </p>
+
+      <hr/>
+
+      <h2>Methods &amp; Tools</h2>
+      <ul>
+        <li><strong>Spatial modeling</strong>: GIS, Remote Sensing, GeoDetector, spatial regression</li>
+        <li><strong>Optimization</strong>: Linear programming, multi-objective optimization, heuristic algorithms (GA, ACO)</li>
+        <li><strong>Machine learning</strong>: Random Forest, LSTM, Seq2Seq</li>
+        <li><strong>Environmental &amp; exposure models</strong>: InVEST, DNDC, exposure assessment frameworks</li>
+      </ul>
+
+      <hr/>
+
+      <h2>Selected Publications</h2>
+
+      <ol>
+        <li><strong>Yang J.</strong> et al. (2025). <em>Internalizing the external costs to achieve environmental and economic goals: A case study of rice production in China.</em> Food Policy, 132: 102857.</li>
+        <li><strong>Yang J.</strong> et al. (2022). <em>Chain modeling for the biogeochemical nexus of cadmium in the soil–rice–human health system.</em> Environment International, 167: 107424.</li>
+        <li><strong>Yang J.</strong> et al. (2021). <em>Rice supply flows and their determinants in China.</em> Resources, Conservation &amp; Recycling, 174: 105812.</li>
+        <li><strong>Yang J.</strong> et al. (2023). <em>Joint effects and spatiotemporal characteristics of the driving factors of landslides in earthquake areas.</em> Journal of Earth Science, 34: 330–338.</li>
+        <li><strong>Yang J.</strong> et al. (2018). <em>New method for landslide susceptibility mapping using spatial logistic regression and GeoDetector: A case study of the Duwen Highway Basin, Sichuan, China.</em> Geomorphology, 324. <span class="small-note">(ESI Highly Cited Paper)</span></li>
+        <li><strong>Yang J.</strong> et al. (2022). <em>Modeling the spatial relationship between rice cadmium and soil properties considering confounding effects and spatial heterogeneity.</em> Chemosphere, 287(4): 132402.</li>
+        <li><strong>Yang J.</strong> et al. (2024). <em>Cross-provincial inpatient mobility patterns and their determinants in China.</em> BMC Health Services Research, 24: 1004.</li>
+        <li><strong>Li L</strong>, ……, <strong>Yang J.</strong> (Corresponding) (2024). <em>Enhancing landslide susceptibility mapping by integrating neighboring information in slope units.</em> Remote Sensing, 16(23): 4475.</li>
+        <li><strong>Yang Y</strong>, <strong>Yang J.</strong> (Co-first) (2019). <em>Local-scale landslide susceptibility mapping using the B-GeoSVC model.</em> Landslides, 16: 1301–1312.</li>
+        <li>Long W., <strong>Yang J.</strong> (Corresponding), Tian X., Fan S. (2025). <em>Foundations, bottlenecks, and innovative pathways for benefit compensation in China’s main grain-producing areas.</em> Journal of South China Agricultural University (Social Science Edition), 24(3): 17–33.</li>
+      </ol>
+
+      <p>
+        🔗 A more complete list is available on my
+        <a href="https://scholar.google.com/citations?user=O6IYuLgAAAAJ&hl=en" target="_blank">Google Scholar profile</a>.
+      </p>
+
+      <hr/>
+
+      <h2>Teaching</h2>
+      <ul>
+        <li>Low-carbon Economic Management</li>
+        <li>Spatial Modeling and Optimization for Agri-Food Systems</li>
+        <li>GIS &amp; Big Data Applications in Food Safety and Environmental Governance</li>
+      </ul>
+
+      <h2>Collaboration</h2>
+      <p>
+        I am open to collaborations on:
+      </p>
+      <ul>
+        <li>Low-carbon transformation of rice and staple food systems</li>
+        <li>Heavy metal risk governance in agricultural regions</li>
+        <li>Biodiversity, ecosystem services, and agricultural policy design</li>
+      </ul>
+      <p>Feel free to reach out by email.</p>
+
+    </div>
+
+    <!-- 中文版本 -->
+    <div id="lang-zh" class="lang-section">
+
+      <div class="name-block">
+        <h1>杨锦涛（Jintao Yang）</h1>
+        <div class="subtitle"><strong>中国农业大学 经济管理学院 副教授</strong></div>
+      </div>
+
+      <div class="contact">
+        📧 邮箱：<a href="mailto:yangjt@lreis.ac.cn">yangjt@lreis.ac.cn</a><br/>
+        📖 <a href="https://scholar.google.com/citations?user=O6IYuLgAAAAJ&hl=en" target="_blank">Google Scholar 个人主页</a>
+      </div>
+
+      <hr/>
+
+      <h2>关于我</h2>
+      <p>
+        我是中国农业大学经济管理学院副教授，长期从事
+        <strong>GIS、环境科学、农业经济学与可持续发展分析</strong> 的交叉研究。
+        我的研究主要聚焦于两个方向：
+      </p>
+
+      <ul>
+        <li><strong>农业–环境系统的时空过程模拟建模</strong></li>
+        <li><strong>可持续农业食物系统的优化与治理</strong></li>
+      </ul>
+
+      <p>
+        我主持了多类具有竞争力的科研项目，包括国家自然科学基金青年项目、教育部人文社会科学基金、
+        中国博士后科学基金、国家博士后创新人才支持计划、国家重点实验室开放基金以及多项校级交叉创新项目。
+        这些资助共同支撑了我在 <strong>时空过程模拟建模</strong> 与
+        <strong>农业食物系统可持续转型</strong> 两大方向上的长期研究布局。
+      </p>
+
+      <hr/>
+
+      <h2>研究方向</h2>
+
+      <h3>1. 农业–环境系统的时空过程模拟建模</h3>
+      <p>
+        综合运用 <strong>GIS、遥感、空间统计与系统模拟</strong> 等方法，构建空间显式模型，
+        解析农业生产、污染迁移、生态过程与人类行为在空间与时间上的演化规律；
+        揭示人地耦合系统中的异质性、动态性与反馈机制。
+      </p>
+
+      <h3>2. 可持续农业食物系统的优化与治理</h3>
+      <p>
+        构建多目标优化与政策模拟框架，面向低碳农业发展、重金属污染治理与生物多样性保护等目标开展研究；
+        量化跨区域粮食流通中隐含的环境足迹，提出具有可操作性的治理路径，以支撑“双碳”目标、食品安全治理与生态补偿制度建设。
+      </p>
+
+      <hr/>
+
+      <h2>方法与工具</h2>
+      <ul>
+        <li><strong>时空模拟</strong>：GIS、遥感、机器学习、空间计量方法</li>
+        <li><strong>优化模型</strong>：线性规划、多目标优化、启发式算法（GA、ACO）</li>
+        <li><strong>机器学习</strong>：Random Forest、LSTM、Seq2Seq</li>
+        <li><strong>生态与风险模型</strong>：InVEST、DNDC、暴露评估模型</li>
+      </ul>
+
+      <hr/>
+
+      <h2>代表性论文（部分）</h2>
+
+      <ol>
+        <li>Yang J. et al. (2025). <em>Internalizing the external costs to achieve environmental and economic goals: A case study of rice production in China.</em> Food Policy.</li>
+        <li>Yang J. et al. (2022). <em>Chain modeling for the biogeochemical nexus of cadmium in the soil–rice–human health system.</em> Environment International.</li>
+        <li>Yang J. et al. (2021). <em>Rice supply flows and their determinants in China.</em> Resources, Conservation &amp; Recycling.</li>
+        <li>Yang J. et al. (2023). <em>Joint effects and spatiotemporal characteristics of the driving factors of landslides in earthquake areas.</em> Journal of Earth Science.</li>
+        <li>Yang J. et al. (2018). <em>New method for landslide susceptibility mapping supported by spatial logistic regression and GeoDetector: A case study of the Duwen Highway Basin, Sichuan, China.</em> Geomorphology. <span class="small-note">（ESI 高被引论文）</span></li>
+        <li>Yang J. et al. (2022). <em>Modeling the spatial relationship between rice cadmium and soil properties considering confounding effects and spatial heterogeneity.</em> Chemosphere.</li>
+        <li>Yang J. et al. (2024). <em>Cross-provincial inpatient mobility patterns and their determinants in China.</em> BMC Health Services Research.</li>
+        <li>Li L, ……, Yang J. (通讯作者). (2024). <em>Enhancing Landslide Susceptibility Mapping by Integrating Neighboring Information in Slope Units.</em> Remote Sensing.</li>
+        <li>Yang Y, Yang J.（共同一作）(2019). <em>Local-scale landslide susceptibility mapping using the B-GeoSVC model.</em> Landslides.</li>
+        <li>龙文进，杨锦涛（通讯作者）等. (2025). 粮食主产区利益补偿机制的构建基础、关键瓶颈与创新路径. 华南农业大学学报（社会科学版）。</li>
+      </ol>
+
+      <p>
+        🔗 更多论文请见
+        <a href="https://scholar.google.com/citations?user=O6IYuLgAAAAJ&hl=en" target="_blank">Google Scholar 个人主页</a>。
+      </p>
+
+      <hr/>
+
+      <h2>教学</h2>
+      <ul>
+        <li>低碳经济管理</li>
+        <li>农业食物系统空间建模与优化</li>
+        <li>食品安全与环境治理中的 GIS 与大数据应用</li>
+      </ul>
+
+      <h2>合作意向</h2>
+      <p>欢迎在以下方向开展合作：</p>
+      <ul>
+        <li>稻米及主粮系统的低碳转型</li>
+        <li>农业区域重金属污染与健康风险治理</li>
+        <li>生物多样性、生态系统服务与农业政策设计</li>
+      </ul>
+      <p>如有合作意向，欢迎邮件联系。</p>
+
+    </div>
+
+  </div>
+
+  <script>
+    function setLang(lang) {
+      const enSection = document.getElementById('lang-en');
+      const zhSection = document.getElementById('lang-zh');
+      const buttons = document.querySelectorAll('.lang-btn');
+
+      if (lang === 'en') {
+        enSection.classList.add('active');
+        zhSection.classList.remove('active');
+      } else {
+        zhSection.classList.add('active');
+        enSection.classList.remove('active');
+      }
+
+      buttons.forEach(btn => {
+        if (btn.textContent.toLowerCase().includes(lang)) {
+          btn.classList.add('active');
+        } else {
+          btn.classList.remove('active');
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>
